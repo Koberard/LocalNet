@@ -1,0 +1,30 @@
+#!/bin/bash
+#SBATCH --job-name=bench_gnn_afqmc
+#SBATCH --account=brubenst-condo
+#SBATCH --partition=gpu-he
+#SBATCH --gres=gpu:1         # Request exactly 1 GPU#SBATCH --exclusive          # STRICT ISOLATION: Locks the node from other users
+#SBATCH --nodes=1
+#SBATCH --ntasks=4           # Number of MPI ranks (adjust if you want more/less)
+#SBATCH --constraint=a40
+#SBATCH --cpus-per-task=4    # 4 CPU cores per rank (16 total cores)
+#SBATCH --mem=64G            # Hard cap on CPU RAM
+#SBATCH --time=24:00:00      # Lowered from 48h to get through the queue faster
+#SBATCH --output=log/gnn_train_%j.out
+#SBATCH --error=log/gnn_train_%j.err
+
+# 1. Ensure a clean environment and load dependencies
+module purge
+module load cuda      
+module load mpi       # Load your cluster's specific MPI module (e.g., openmpi)
+
+# 2. Activate Environment
+# REPLACE THIS with your actual path if it has changed
+source ~/DL_env/TF_GPU.venv/bin/activate
+
+# 3. Run via MPI
+echo "====================================================="
+echo "Starting Isolated GNN Benchmark on $(hostname)"
+echo "Ranks: $SLURM_NTASKS | Cores/Rank: $SLURM_CPUS_PER_TASK"
+echo "====================================================="
+
+python Train_GNN.py

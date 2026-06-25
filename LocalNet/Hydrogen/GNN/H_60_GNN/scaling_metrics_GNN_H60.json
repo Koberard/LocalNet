@@ -1,0 +1,14 @@
+{
+    "N_atoms": 60,
+    "backend": "GNN",
+    "results": {
+        "final_energy_ha": -30.5436,
+        "final_error_ha": 0.050218
+    },
+    "local_energy_proxy": {
+        "avg_time_sec": 0.384707,
+        "model_weights_mb": 0.0584,
+        "graph_batch_mb": 56.7188,
+        "total_intrinsic_memory_mb": 56.7771
+    }
+}

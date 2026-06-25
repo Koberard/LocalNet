@@ -1,0 +1,27 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"mpi"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "mpi"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Traceback (most recent call last):
+  File "/oscar/scratch/kberard/DL_Research/Local-Net/Paper_Results/Scaling/H_More_Walkers/H_1BD_V/H_20_GNN/AFQMC_ipie.py", line 62, in <module>
+    gen_ipie_input_from_pyscf_chk(chk_file, hamil_file=ham_file, wfn_file=wfn_file, verbose=0, chol_cut=1e-5)
+  File "/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/utils/from_pyscf.py", line 81, in gen_ipie_input_from_pyscf_chk
+    write_hamiltonian(ham.H1[0], copy_LPX_to_LXmn(ham.chol), ham.ecore, filename=hamil_file)
+  File "/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/utils/io.py", line 40, in write_hamiltonian
+    with h5py.File(filename, "w") as fh5:
+  File "/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/h5py/_hl/files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/h5py/_hl/files.py", line 244, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 56, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 57, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 122, in h5py.h5f.create
+BlockingIOError: [Errno 11] Unable to synchronously create file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')

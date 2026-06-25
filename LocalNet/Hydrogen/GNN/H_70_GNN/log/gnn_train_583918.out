@@ -1,0 +1,18 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 583918
+##  Job Name : bench_gnn_afqmc
+##  Nodelist : gpu1505
+##      CPUs : 4
+##  Mem/Node : 65536 MB
+## Directory : /oscar/scratch/kberard/DL_Research/Local-Net/Paper_Results/Scaling/H_More_Walkers/H_1BD_V/H_80_GNN
+##   Job Started : Wed Mar  4 09:20:18 AM EST 2026
+###############################################################################
+=====================================================
+Starting Isolated GNN Benchmark on gpu1505.oscar.ccv.brown.edu
+Ranks: 4 | Cores/Rank: 4
+=====================================================
+>>> STARTING GRAPH DELTA-LEARNING FOR: H80
+
+>>> 1. Generating Geometry & Graph Topology...
+
+>>> 3. Loading & Graph Formatting...

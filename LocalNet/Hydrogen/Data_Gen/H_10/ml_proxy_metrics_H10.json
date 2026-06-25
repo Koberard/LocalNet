@@ -1,0 +1,24 @@
+{
+    "system": "H10",
+    "n_atoms": 10,
+    "n_basis": 10,
+    "total_walkers": 2048,
+    "num_blocks": 50,
+    "results": {
+        "final_energy_ha": -5.118739756834181,
+        "final_error_ha": 0.004292527543753381
+    },
+    "timing": {
+        "total_wall_time_sec": 63.5393,
+        "time_per_block_sec": 1.2708
+    },
+    "memory": {
+        "peak_rss_mb": 27.88
+    },
+    "compute": {
+        "est_flops_per_step_physics": 16384000,
+        "est_total_flops_physics": 819200000,
+        "est_tflops_throughput_physics": 1.3e-05,
+        "nn_flops": "Dependent on loaded Keras model architecture"
+    }
+}

@@ -1,0 +1,30 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"mpi"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "mpi"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+2026-03-04 11:19:08.472732: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1772641207.410418 2464956 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 43604 MB memory:  -> device: 0, name: NVIDIA A40, pci bus id: 0000:01:00.0, compute capability: 8.6
+I0000 00:00:1772641221.319294 2465250 cuda_executor.cc:508] failed to allocate 10.05GiB (10794303488 bytes) from device: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory
+I0000 00:00:1772641221.319813 2465250 cuda_executor.cc:508] failed to allocate 9.05GiB (9714873344 bytes) from device: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory
+I0000 00:00:1772641221.320152 2465250 cuda_executor.cc:508] failed to allocate 8.14GiB (8743386112 bytes) from device: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory
+I0000 00:00:1772641221.320524 2465250 cuda_executor.cc:508] failed to allocate 7.33GiB (7869047296 bytes) from device: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2026-03-04 11:20:21.320589: W external/local_xla/xla/tsl/framework/bfc_allocator.cc:382] Garbage collection: deallocate free memory regions (i.e., allocations) so that we can re-allocate a larger region to avoid OOM due to memory fragmentation. If you see this message frequently, you are running near the threshold of the available device memory and re-allocation may incur great performance overhead. You may try smaller batch sizes to observe the performance impact. Set TF_ENABLE_GPU_GARBAGE_COLLECTION=false if you'd like to disable this feature.
+I0000 00:00:1772641221.674857 2465250 cuda_executor.cc:508] failed to allocate 18.08GiB (19409403904 bytes) from device: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory
+I0000 00:00:1772641221.675398 2465250 cuda_executor.cc:508] failed to allocate 16.27GiB (17468463104 bytes) from device: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory
+I0000 00:00:1772641221.675925 2465250 cuda_executor.cc:508] failed to allocate 14.64GiB (15721616384 bytes) from device: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory
+I0000 00:00:1772641454.643021 2464956 devices.cc:67] Number of eligible GPUs (core count >= 8, compute capability >= 0.0): 1
+I0000 00:00:1772641454.643917 2464956 single_machine.cc:376] Starting new session
+I0000 00:00:1772641454.651994 2464956 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 43604 MB memory:  -> device: 0, name: NVIDIA A40, pci bus id: 0000:01:00.0, compute capability: 8.6
+WARNING:tensorflow:From /oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/tensorflow/python/profiler/internal/flops_registry.py:471: tensor_shape_from_node_def_name (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This API was designed for TensorFlow v1. See https://www.tensorflow.org/guide/migrate for instructions on how to migrate your code to TensorFlow v2.

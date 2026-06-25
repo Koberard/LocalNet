@@ -1,0 +1,21 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"mpi"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "mpi"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+2026-03-04 13:45:00.202256: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1772649944.508726 1753644 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46710 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:41:00.0, compute capability: 8.6
+I0000 00:00:1772649956.779733 1753782 cuda_executor.cc:508] failed to allocate 13.34GiB (14319681536 bytes) from device: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory
+I0000 00:00:1772649956.780192 1753782 cuda_executor.cc:508] failed to allocate 12.00GiB (12887712768 bytes) from device: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory
+I0000 00:00:1772649956.780624 1753782 cuda_executor.cc:508] failed to allocate 10.80GiB (11598941184 bytes) from device: RESOURCE_EXHAUSTED: : CUDA_ERROR_OUT_OF_MEMORY: out of memory
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(

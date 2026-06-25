@@ -1,0 +1,17 @@
+{
+    "system": "H80",
+    "backend": "GPU (Classical)",
+    "results": {
+        "final_energy_ha": -40.15098118697748,
+        "final_error_ha": 0.03644057321533542
+    },
+    "micro_benchmark": {
+        "total_calls": 51,
+        "avg_time_per_call_sec": 2.849212,
+        "est_flops_per_call": 10485760000,
+        "throughput_tflops": 0.00368
+    },
+    "memory": {
+        "peak_gpu_vram_mb": 4050.3
+    }
+}

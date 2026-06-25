@@ -1,0 +1,13 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 588191
+##  Job Name : bench_gnn_afqmc
+##  Nodelist : gpu1505
+##      CPUs : 4
+##  Mem/Node : 65536 MB
+## Directory : /oscar/scratch/kberard/DL_Research/Local-Net/Paper_Results/Scaling/H_More_Walkers/H_1BD_V/H_100_GNN
+##   Job Started : Wed Mar  4 03:38:13 PM EST 2026
+###############################################################################
+=====================================================
+Starting Isolated GNN Benchmark on gpu1505.oscar.ccv.brown.edu
+Ranks: 4 | Cores/Rank: 4
+=====================================================

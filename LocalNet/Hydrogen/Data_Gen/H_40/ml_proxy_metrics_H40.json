@@ -1,0 +1,28 @@
+{
+    "system": "H40",
+    "n_atoms": 40,
+    "total_walkers": 2048,
+    "num_blocks": 50,
+    "results": {
+        "final_energy_ha": -20.13662980046279,
+        "final_error_ha": 0.01795973459030532
+    },
+    "timing": {
+        "total_wall_time_sec": 35.1153,
+        "time_per_block_sec": 0.7023
+    },
+    "memory": {
+        "peak_host_ram_mb": 1627.84,
+        "peak_gpu_vram_mb": 622.79,
+        "gpu_vram_split": {
+            "tensorflow_mb": 47.7,
+            "cupy_mb": 575.09
+        }
+    },
+    "compute": {
+        "flops_physics_per_walker": 512000,
+        "flops_nn_per_walker": 1720897,
+        "total_tflops_executed": 0.228649,
+        "tflops_throughput": 0.006511
+    }
+}

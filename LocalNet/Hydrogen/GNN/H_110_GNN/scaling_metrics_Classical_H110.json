@@ -1,0 +1,13 @@
+{
+    "N_atoms": 110,
+    "backend": "Classical",
+    "results": {
+        "final_energy_ha": -55.894789,
+        "final_error_ha": 0.092482
+    },
+    "local_energy_proxy": {
+        "avg_time_sec": 11.357882,
+        "cholesky_and_h1_mb": 30.3719,
+        "total_intrinsic_memory_mb": 30.3719
+    }
+}

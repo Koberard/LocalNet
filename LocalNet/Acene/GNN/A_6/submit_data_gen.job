@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --job-name=gen_A1_data
+#SBATCH --account=brubenst-condo
+#SBATCH --partition=gpu-he
+#SBATCH --gres=gpu:1         # 1 GPU is enough for H20
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=12
+#SBATCH --mem=64G
+#SBATCH --time=48:00:00      # Should take ~2-5 minutes
+#SBATCH --output=log/data_gen_%j.out
+#SBATCH --error=log/data_gen_%j.err
+
+# 1. Load your modules
+module load cuda        # Check your 'nvcc --version' or cluster docs
+
+# 2. Activate Environment
+# REPLACE THIS with your actual path
+source ~/DL_env/TF_GPU.venv/bin/activate
+
+# 3. Run
+echo "Starting Data Generation on $(hostname)"
+python A_Gen_dat.py

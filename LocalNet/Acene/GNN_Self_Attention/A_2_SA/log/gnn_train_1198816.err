@@ -1,0 +1,452 @@
+2026-04-02 21:56:10.277068: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-04-02 21:57:19.129775: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:47] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1775181439.129816  611543 gpu_process_state.cc:208] Using CUDA malloc Async allocator for GPU: 0
+I0000 00:00:1775181439.131134  611543 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46714 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:41:00.0, compute capability: 8.6
+2026-04-02 21:57:25.576698: I external/local_xla/xla/service/service.cc:163] XLA service 0x7f983000d7b0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2026-04-02 21:57:25.576729: I external/local_xla/xla/service/service.cc:171]   StreamExecutor device (0): NVIDIA RTX A6000, Compute Capability 8.6
+2026-04-02 21:57:25.810100: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2026-04-02 21:57:26.785080: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 91002
+2026-04-02 21:57:26.975959: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 21:57:26.976003: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 21:57:26.976018: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 21:57:26.976038: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 21:57:30.299562: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_9', 104 bytes spill stores, 104 bytes spill loads
+
+2026-04-02 21:57:31.240945: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_13', 124 bytes spill stores, 124 bytes spill loads
+
+2026-04-02 21:57:32.275947: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_12', 304 bytes spill stores, 304 bytes spill loads
+
+I0000 00:00:1775181458.015096  611784 device_compiler.h:196] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2026-04-02 21:57:40.103955: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 21:57:40.104005: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 21:57:40.104034: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 21:57:40.104053: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 21:57:41.495397: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_4', 4 bytes spill stores, 4 bytes spill loads
+
+2026-04-02 21:57:42.285525: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_4', 16 bytes spill stores, 16 bytes spill loads
+
+2026-04-02 21:57:42.959015: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_9', 360 bytes spill stores, 360 bytes spill loads
+
+2026-04-02 21:57:43.674695: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_9', 8 bytes spill stores, 8 bytes spill loads
+
+2026-04-02 21:57:44.068391: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_13', 16 bytes spill stores, 16 bytes spill loads
+
+2026-04-02 21:57:45.761657: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_12', 12 bytes spill stores, 12 bytes spill loads
+
+2026-04-02 21:57:46.399965: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_12', 312 bytes spill stores, 312 bytes spill loads
+
+2026-04-02 21:57:46.621824: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_13', 580 bytes spill stores, 580 bytes spill loads
+
+2026-04-02 21:57:52.619469: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 21:57:52.619521: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 21:57:53.879382: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_4', 16 bytes spill stores, 16 bytes spill loads
+
+2026-04-02 21:57:54.214632: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_4', 4 bytes spill stores, 4 bytes spill loads
+
+2026-04-02 21:57:54.999264: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_9', 360 bytes spill stores, 360 bytes spill loads
+
+2026-04-02 21:57:55.384527: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_9', 8 bytes spill stores, 8 bytes spill loads
+
+2026-04-02 22:07:34.650501: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 22:07:34.651348: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 22:07:36.824138: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_9', 360 bytes spill stores, 360 bytes spill loads
+
+2026-04-02 22:07:38.806825: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 22:07:38.806872: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-04-02 22:07:40.160696: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_4', 4 bytes spill stores, 4 bytes spill loads
+
+2026-04-02 22:07:41.722281: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_4', 16 bytes spill stores, 16 bytes spill loads
+
+2026-04-02 22:07:41.730472: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_9', 360 bytes spill stores, 360 bytes spill loads
+
+2026-04-02 22:07:42.218090: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_9', 8 bytes spill stores, 8 bytes spill loads
+
+2026-04-02 22:07:45.703363: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1775182116.579939  621061 gpu_process_state.cc:208] Using CUDA malloc Async allocator for GPU: 0
+I0000 00:00:1775182116.581225  621061 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 46710 MB memory:  -> device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:41:00.0, compute capability: 8.6
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(
+/oscar/home/kberard/DL_env/TF_GPU.venv/lib64/python3.9/site-packages/ipie/walkers/pop_controller.py:175: ComplexWarning: Casting complex values to real discards the imaginary part
+  walkers.__dict__[d][iw] = xp.array(

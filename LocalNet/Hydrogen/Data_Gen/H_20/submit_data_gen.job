@@ -1,0 +1,30 @@
+#!/bin/bash
+#SBATCH --job-name=gen_h20_data
+#SBATCH --account=brubenst-condo
+#SBATCH --partition=gpu-he
+#SBATCH --gres=gpu:1          # 1 GPU is required for the CuPy estimator
+#SBATCH --nodes=1
+#SBATCH --ntasks=1            # Single MPI rank (simplest for this setup)
+#SBATCH --cpus-per-task=10  # <--- CHANGE: Increased from 4 to 16 for H70 math
+#SBATCH --mem=32G             # <--- CHANGE: Increased from 16G to 32G (Safety buffer)
+#SBATCH --time=48:00:00       # <--- NOTE: H70 will take HOURS, not minutes.
+#SBATCH --output=log/data_gen_%j.out
+#SBATCH --error=log/data_gen_%j.err
+
+# 1. Load your modules
+module load cuda        # Check your 'nvcc --version' or cluster docs
+
+# 2. Performance Tuning (CRITICAL)
+# Tell Python/Numpy to use all the CPUs you requested
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
+# 3. Activate Environment
+source ~/DL_env/TF_GPU.venv/bin/activate
+
+# 4. Run
+echo "Starting H20 Data Generation on $(hostname)"
+echo "Allocated Resources: $SLURM_CPUS_PER_TASK CPUs, $SLURM_MEM_PER_NODE Memory"
+
+# Use the 'long' script we just created
+python H_Gen_dat.py

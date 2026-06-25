@@ -1,0 +1,17 @@
+{
+    "system": "H110",
+    "backend": "ML Proxy",
+    "results": {
+        "final_energy_ha": -55.231048838619365,
+        "final_error_ha": 0.03467370522040598
+    },
+    "micro_benchmark": {
+        "total_calls": 51,
+        "avg_time_per_call_sec": 0.921246,
+        "flops_per_call": 47351597056,
+        "throughput_tflops": 0.0514
+    },
+    "memory": {
+        "peak_gpu_vram_mb": 4705.55
+    }
+}

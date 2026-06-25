@@ -1,0 +1,17 @@
+{
+    "system": "H40",
+    "backend": "ML Proxy",
+    "results": {
+        "final_energy_ha": -20.13662980046278,
+        "final_error_ha": 0.017959734590305778
+    },
+    "micro_benchmark": {
+        "total_calls": 51,
+        "avg_time_per_call_sec": 0.11768,
+        "flops_per_call": 4572973056,
+        "throughput_tflops": 0.038859
+    },
+    "memory": {
+        "peak_gpu_vram_mb": 621.79
+    }
+}
